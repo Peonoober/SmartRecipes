@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Брендовые цвета (светлая тема) -->
+    <color name="primary">#FF7043</color>
+    <color name="primary_dark">#E64A19</color>
+
+    <!-- Базовые -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Фон и поверхности -->
+    <color name="background">#FFFAFAFA</color>
+    <color name="surface">#FFFFFFFF</color>
+
+    <!-- Текст -->
+    <color name="text_primary">#FF212121</color>
+    <color name="muted">#FF757575</color>
+
+    <!-- Чипы, вторичные элементы -->
+    <color name="chip_bg">#FFEEEEEE</color>
+
+    <!-- Фоновый узор (светло-оранжевый) -->
+    <color name="bg_pattern_light">#1AFF7043</color>
+    <color name="secondary_button_bg">#FFFFFFFF</color>
+    <color name="bg_pattern_dark">#1AFF7043</color>
+</resources>

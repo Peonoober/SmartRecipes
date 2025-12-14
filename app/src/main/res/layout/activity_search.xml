@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Top bar -->
+    <View
+        android:id="@+id/topbar"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:background="@color/primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поиск рецептов"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/topbar"
+        app:layout_constraintBottom_toBottomOf="@id/topbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Поле название рецепта -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Название блюда"
+        android:layout_marginTop="120dp"
+        app:layout_constraintTop_toBottomOf="@id/topbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Выбор сложности -->
+    <Spinner
+        android:id="@+id/spinnerDifficulty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tilName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Кнопка выбора ингредиентов -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSelectIngredients"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Выбрать ингредиенты"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:backgroundTint="@color/white"
+        app:strokeColor="@color/primary"
+        app:strokeWidth="2dp"
+        app:cornerRadius="12dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerDifficulty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Кнопка сброса фильтров -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnResetFilters"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Сбросить фильтры"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:backgroundTint="@color/white"
+        app:strokeColor="@color/primary"
+        app:strokeWidth="2dp"
+        app:cornerRadius="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSelectIngredients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Кнопка показать результаты -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnShowResults"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:text="Показать результаты"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primary"
+        app:cornerRadius="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btnResetFilters"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Окошко с выбранными ингредиентами -->
+    <TextView
+        android:id="@+id/tvSelectedIngredients"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/chip_bg"
+        android:padding="8dp"
+        android:minHeight="40dp"
+        android:text="Ингредиенты: не выбраны"
+        android:textColor="@color/text_primary"
+        app:layout_constraintTop_toBottomOf="@id/btnShowResults"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnBackFromSearch"/>
+
+    <!-- Кнопка назад -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBackFromSearch"
+        android:layout_width="140dp"
+        android:layout_height="56dp"
+        android:text="Назад"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="8dp"
+        app:strokeColor="@color/primary"
+        app:strokeWidth="2dp"
+        app:cornerRadius="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSelectedIngredients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp"
+    android:height="160dp"
+    android:viewportWidth="160"
+    android:viewportHeight="160">
+
+    <!-- Верхняя булочка: скруглённая, с дугой сверху -->
+    <path
+        android:fillColor="@color/primary"
+        android:fillAlpha="0.20"
+        android:pathData="
+            M32,70
+            Q80,30 128,70
+            L128,86
+            L32,86
+            Z" />
+
+    <!-- Котлета / начинка: более толстый слой -->
+    <path
+        android:fillColor="@color/primary"
+        android:fillAlpha="0.28"
+        android:pathData="
+            M30,96
+            L130,96
+            L130,116
+            L30,116
+            Z" />
+
+    <!-- Нижняя булочка: прямоугольник, как раньше, но чуть крупнее -->
+    <path
+        android:fillColor="@color/primary"
+        android:fillAlpha="0.20"
+        android:pathData="
+            M32,122
+            H128
+            V140
+            H32
+            Z" />
+</vector>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Базовый светлый фон -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/background" />
+        </shape>
+    </item>
+
+    <!-- Большой круг в правом верхнем углу -->
+    <item android:gravity="top|end">
+        <shape android:shape="oval">
+            <size android:width="260dp" android:height="260dp" />
+            <solid android:color="@color/bg_pattern_light" />
+        </shape>
+    </item>
+
+    <!-- Круг поменьше в левом нижнем углу -->
+    <item android:gravity="bottom|start">
+        <shape android:shape="oval">
+            <size android:width="200dp" android:height="200dp" />
+            <solid android:color="@color/bg_pattern_light" />
+        </shape>
+    </item>
+
+    <!-- Минималистичный бургер по центру -->
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/ic_burger_center" />
+
+</layer-list>

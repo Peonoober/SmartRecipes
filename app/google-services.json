@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "12678137501",
+    "project_id": "recipesbd-ec366",
+    "storage_bucket": "recipesbd-ec366.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12678137501:android:5b532178e7d7ce991f7674",
+        "android_client_info": {
+          "package_name": "com.example.smartrecipes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC01QTCgJECpi5U5MXf0zmWYtioALj0icM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
